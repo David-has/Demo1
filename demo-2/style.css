@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #363945;
+}
+
+.bg{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+    z-index:-1;
+}
+
+.menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#282829;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    font-size:80px;
+    color:#fff8dc;
+    text-shadow:1px 4px 2px #a58250;
+}
+
+h2{
+    text-align: center;
+    font-size:55px;
+    color:#fff8dc;
+    margin-top:40px;
+}
+
+span{
+    color:#a58250;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn{
+    position: relative;
+    padding:10px;
+    left:50rem;
+    margin-top:20rem;
+    margin-left:45px;
+    color:#fff8dc;
+    border:none;
+    background: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:all 0.3s;
+}
+
+.btn:hover{
+    color:#a58250;
+    border-bottom:1px solid #344534;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    width:100%;
+    height: 80px;
+    list-style: none;
+    overflow:hidden;
+}
+
+li a{
+    display: block;
+    position: relative;
+    padding:22.5px;
+    left:40px;
+    color: #fff8dc;
+    text-shadow: 0px 1px 2px #fff8dc;
+    text-decoration:none;
+    font-size: 22px;
+    font-weight: 500;
+    transition:0.3s;
+}
+
+li a::after{
+    content:'';
+    width: 0;
+    height:3px;
+    background:#a58250;
+    position: absolute;
+    left:0;
+    bottom:10px;
+    transition: 0.5s;
+}
+
+li a:hover::after{
+    width:100%;
+}
+
+a:hover{
+    color:#a58250;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right:30px;
+    gap:10px;
+}
+
+.search input{
+    width:300px;
+    height:30px;
+    padding:10px;
+    border:none;
+    outline:none;
+    background: none;
+    border-bottom: 1px solid #fff8dc;
+    color:#fff;
+    font-size:18px;
+}
+
+.search input:focus{
+    color:#a58250;
+}
+
+.search .srch{
+    height:30px;
+    width:40px;
+    border:none;
+    font-size: 20px;
+    background: none;
+    color:#fff8dc;
+    border-bottom: 1px solid #fff8dc;
+}
+
+.secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color:#fff8dc;
+    margin:20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    margin-top:10rem;
+    gap:7rem;
+    transition:0.5s;
+}
+
+.secondary h1{
+    display: block;
+    text-align:center;
+    margin-top:15rem;
+}
+
+.manga, .anime, .art{
+    text-align: center;
+    top:40px;
+    cursor:pointer;
+}
+
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    margin:20px;
+}
+
+.third h1{
+    margin-bottom:35rem;
+}
+
+.contacts{
+    display: flex;
+    position: absolute;
+    border-radius: 5px;
+    width:55rem;
+    height:30rem;
+    margin-top:10rem;
+}
+
+.contacts input{
+    display: block;
+    flex-direction: row;
+    width: 30rem;
+    height:50px;
+    color:#fff8dc;
+    text-shadow:0px 1px 1px #a58250;
+    margin: 30px;
+    padding:5px 25px;
+    font-size:15px;
+    background:none;
+    outline:none;
+    border:none;
+}
+
+.contacts input:focus{
+    border-bottom:2px solid #a58250;
+    color:#a58250
+}
+
+textarea{
+    display:flex;
+    color:#fff8dc;
+    background: none;
+    font-size: 15px;
+    text-shadow:0px 1px 1px #a58250;
+    border: none;
+    outline:none;
+    width:25rem;
+}
+
+textarea:focus{
+    border:2px solid #a58250;
+    color:#a58250
+}
+
+.btn-sub{
+    position: absolute;
+    left:50px;
+    bottom:0;
+    padding:10px 25px;
+    color:#fff8dc;
+    border:2px solid #a58250;
+    border-radius:5px;
+    font-size: 15px;
+    font-weight: 500;
+    background: none;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.btn-sub:hover{
+    color:#a58250;
+    border-color:#fff8dc;
+}
